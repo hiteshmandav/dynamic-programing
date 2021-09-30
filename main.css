@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background-color: hsl(0, 79%, 60%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.selectProblem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+.problemStatement{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.differentSolutions{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10vh;
+}
+
+
+
+.conventional{
+    background-color: transparent;
+    height: 30vh;
+    width: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: white 2px solid;
+}
+
+.memoisation{
+    background-color: transparent;
+    height: 30vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    border: white 2px solid;
+}
+.solutionType{
+    font-size: 32px;
+    font-weight: 900;
+}
+.solution{
+    font-size: 24px;
+    font-weight: 600;
+}
+.time{
+    font-size: 16px;
+    font-weight: 400
+}
+.tabulation{
+    background-color: transparent;
+    height: 30vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    border: white 2px solid;
+}
+.input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputStyles{
+    background: transparent;
+    border: black 1px solid;
+    padding: 5px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+.inputStyles:hover{
+    background: salmon;
+    border: black 1px solid;
+    padding: 5px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+#problems {
+    padding: 10px;
+    width: 300px;
+    background: transparent;
+    border: black 1px solid;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#problems:hover {
+    padding: 10px;
+    width: 300px;
+    background: salmon;
+    border: hsl(0, 79%, 60%) 1px solid;
+    border-radius: 10px;
+    color: white;
+}
+
+#executeButton{
+    transition: all .5s ease;
+    padding: 5px;
+    width: 100px;
+    background: transparent;
+    border-bottom: white 2px solid;
+    border: none;
+    border-bottom: white 2px solid;
+    color: white;
+}
+
+#executeButton:hover{
+    padding: 5px;
+    width: 100px;
+    background: white;
+    border-bottom: white 2px solid;
+    border: none;
+    border-bottom: white 2px solid;
+    color: hsl(0, 79%, 60%);
+}

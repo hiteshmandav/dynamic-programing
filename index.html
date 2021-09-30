@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dynamic Programing Excercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <div class="background">
+
+        <div class="controls">
+            <h1 class="heading">Dynamic programing Exercise</h1>
+        </div>
+        <div id="problemStatement" class="problemStatement">Please Select a Problem</div>
+        <div class="selectProblem">
+            <!--<label class="problemsLabel" for="problems">Choose a Problem:</label> -->
+            <select name="problems" id="problems">
+                <option value="" selected>--select--</option>
+                <option value="fib">Fibonacci Number</option>
+                <option value="grid">Grid Traveler</option>
+                <option value="canSum">Can Sum</option>
+                <option value="howSum">How Sum</option>
+                <option value="bestSum">Best Sum</option>
+                <option value="canConstruct">Can Construct</option>
+                <option value="countConstruct">Count Construct</option>
+                <option value="allConstruct">All Construct</option>
+            </select>
+        </div>
+        <div class="input">
+            <!--<label class="problemsLabel" for="problems">Choose a Problem:</label> -->
+            <div>
+                <label id="fiboInputLabel" for="fiboInput">Nth Number in the series</label>
+                <input type="number" id="fiboInput" name="fiboInput" class="inputStyles">
+            </div>
+            <div>
+                <label id="gridRowInputLabel" for="gridRowInput">Rows</label>
+                <input type="number" id="gridRowInput" name="gridRowInput" class="inputStyles">
+            </div>
+            <div>
+                <label id="gridColInputLabel" for="gridColInput">Columns</label>
+                <input type="number" id="gridColInput" name="gridColInput" class="inputStyles">
+            </div>
+            
+            <button id="executeButton" type="submit" value=8 onClick="execute()">Execute</button>
+        </div>
+        
+        <div class="differentSolutions">
+           <!--<div class="conventional">
+
+           </div>-->
+           <div class="memoisation">
+                <p class="solutionType">Memoisation</p>
+                <p id="memoisation" class="solution"></p>
+                <p id="memoisationTime" class="time"></p>
+           </div>
+           <div class="tabulation">
+                <p class="solutionType">Tabulation</p>
+                <p id="tabulation" class="solution"></p>
+                <p id="tabulationTime" class="time"></p>
+           </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
