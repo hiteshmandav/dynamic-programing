@@ -136,7 +136,11 @@ input[type=number] {
     color: white;
 }
 
-#executeButton{
+#executeButton,
+#addButton,
+#deleteAllButton,
+#addStringButton,
+#deleteAllStringButton {
     transition: all .5s ease;
     padding: 5px;
     width: 100px;
@@ -147,12 +151,72 @@ input[type=number] {
     color: white;
 }
 
-#executeButton:hover{
+.listButtons{
+    display: flex;
+    justify-content: space-between;
+}
+#addButton,
+#deleteAllButton,
+#addStringButton,
+#deleteAllStringButton{
+    margin-top: 5px;
+    font-size: 12px;
+    max-height: 24px;
+}
+
+#executeButton:hover,
+#addButton:hover,
+#deleteAllButton:hover,
+#addStringButton:hover,
+#deleteAllStringButton:hover{
     padding: 5px;
-    width: 100px;
+    width: 200px;
     background: white;
     border-bottom: white 2px solid;
     border: none;
     border-bottom: white 2px solid;
     color: hsl(0, 79%, 60%);
 }
+
+#addButton:hover::after,
+#addStringButton:hover::after{
+    content: " the value to the List";
+}
+
+#deleteAllButton:hover::after,
+#deleteAllStringButton:hover::after{
+    content: " all the values from the List";
+}
+
+.solutionContainer{
+    border: 3px solid salmon;
+    width: 250px;
+    font-size: 250%;
+    overflow: auto;
+}
+
+.list{
+    margin-top: 32px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: hsl(0, 79%, 60%); 
+    border-radius: 0px;
+    border:salmon 1px solid;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: salmon; 
+    border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white;
+  }

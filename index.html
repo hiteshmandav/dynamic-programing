@@ -42,6 +42,38 @@
                 <label id="gridColInputLabel" for="gridColInput">Columns</label>
                 <input type="number" id="gridColInput" name="gridColInput" class="inputStyles">
             </div>
+            <div id="sumInputGroup">
+                <label id="sumInputLabel" for="sumInput">Sum Required</label>
+                <input type="number" id="sumInput" name="sumInput" class="inputStyles">
+            </div>
+            <div id="sumInputListGroup">
+                <label id="sumInputListLabel" for="sumInputList">Add List of values</label>
+                <input type="number" id="sumInputList" name="sumInputList" class="inputStyles">
+                <div class="listButtons">    
+                    <button id="addButton" type="submit" value=8 onClick="addValue()">Add</button>
+                    <button id="deleteAllButton" type="submit" value=8 onClick="deleteAllValues()">Delete</button>
+                </div>
+                <div class="list">
+                    <p id="list"></p>
+                </div>
+                <p id="values"></p>
+            </div>
+
+            <div id="textInputGroup">
+                <label id="textInputLabel" for="textInput">String Required</label>
+                <input type="text" id="textInput" name="textInput" class="inputStyles">
+            </div>
+            <div id="textInputListGroup">
+                <label id="textInputListLabel" for="textInputList">Add List of values</label>
+                <input type="text" id="textInputList" name="textInputList" class="inputStyles">
+                <div class="listButtons">    
+                    <button id="addStringButton" type="submit" onClick="addStringValue()">Add</button>
+                    <button id="deleteAllStringButton" type="submit" onClick="deleteAllStringValues()">Delete</button>
+                </div>
+                <div class="list">
+                    <p id="listString"></p>
+                </div>
+            </div>
             
             <button id="executeButton" type="submit" value=8 onClick="execute()">Execute</button>
         </div>
@@ -52,12 +84,12 @@
            </div>-->
            <div class="memoisation">
                 <p class="solutionType">Memoisation</p>
-                <p id="memoisation" class="solution"></p>
+                <div class="solutionContainer"><p id="memoisation" class="solution"></p></div>
                 <p id="memoisationTime" class="time"></p>
            </div>
            <div class="tabulation">
                 <p class="solutionType">Tabulation</p>
-                <p id="tabulation" class="solution"></p>
+                <div class="solutionContainer"><p id="tabulation" class="solution"></p></div>
                 <p id="tabulationTime" class="time"></p>
            </div>
         </div>
