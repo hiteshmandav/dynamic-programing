@@ -1,12 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: hsl(0, 79%, 60%);
 }
 
 .background{
     background-color: hsl(0, 79%, 60%);
     min-height: 100vh;
     color: #fff;
+}
+
+.code{
+    margin-top: 20px;
 }
 
 .controls{
@@ -27,13 +32,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 20vw;
 }
 
 .differentSolutions{
     /* background-color: aliceblue; */
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin: 10vh;
 }
 
@@ -219,4 +225,26 @@ input[type=number] {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .differentSolutions {
+        flex-direction: column;
+        margin: 2vh 0;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .input {
+        flex-direction: column;
+    }
+
+    .differentSolutions {
+        flex-direction: column;
+        margin: 2vh 5vh;
+    }
   }

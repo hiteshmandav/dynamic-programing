@@ -60,11 +60,11 @@
             </div>
 
             <div id="textInputGroup">
-                <label id="textInputLabel" for="textInput">String Required</label>
+                <label id="textInputLabel" for="textInput">Target Required</label>
                 <input type="text" id="textInput" name="textInput" class="inputStyles">
             </div>
             <div id="textInputListGroup">
-                <label id="textInputListLabel" for="textInputList">Add List of values</label>
+                <label id="textInputListLabel" for="textInputList">Add words in word Bank</label>
                 <input type="text" id="textInputList" name="textInputList" class="inputStyles">
                 <div class="listButtons">    
                     <button id="addStringButton" type="submit" onClick="addStringValue()">Add</button>
@@ -79,20 +79,33 @@
         </div>
         
         <div class="differentSolutions">
-           <!--<div class="conventional">
-
-           </div>-->
-           <div class="memoisation">
-                <p class="solutionType">Memoisation</p>
-                <div class="solutionContainer"><p id="memoisation" class="solution"></p></div>
-                <p id="memoisationTime" class="time"></p>
+           <div class="">
+                <div class="memoisation">
+                    <p class="solutionType">Memoisation</p>
+                    <div class="solutionContainer"><p id="memoisation" class="solution"></p></div>
+                    <p id="memoisationTime" class="time"></p>
+                </div>
+                <div class="code">
+                <pre>
+<code id="memoCode"></code>
+                </pre>
            </div>
-           <div class="tabulation">
-                <p class="solutionType">Tabulation</p>
-                <div class="solutionContainer"><p id="tabulation" class="solution"></p></div>
-                <p id="tabulationTime" class="time"></p>
+           </div>
+
+           <div class="">
+                <div class="tabulation">
+                        <p class="solutionType">Tabulation</p>
+                        <div class="solutionContainer"><p id="tabulation" class="solution"></p></div>
+                        <p id="tabulationTime" class="time"></p>
+                </div>
+                <div class="code">
+                <pre>
+<code id="tabCode"></code>
+                </pre>
+           </div>
            </div>
         </div>
+
     </div>
 </body>
 <script src="main.js"></script>
